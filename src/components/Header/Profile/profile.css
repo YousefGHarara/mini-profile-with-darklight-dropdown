@@ -1,0 +1,113 @@
+.my-profile
+{
+  position: relative;
+}
+
+.my-profile .image
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.my-profile .image img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.my-profile .dropdown-menu
+{
+  width: 200px;
+  background-color: #fff;
+  position:  absolute;
+  top: 140%;
+  left: 0%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px #888;
+}
+
+.my-profile .dropdown-menu::before
+{
+  content: '';
+  position: absolute;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid #fff;
+  transform: rotate(180deg);
+  top: -12px;
+  left: 15px;
+  
+}
+
+.my-profile .dropdown-menu h3
+{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.my-profile .dropdown-menu h3 span
+{
+  font-size: 12px;
+}
+
+.my-profile .dropdown-menu ul
+{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.my-profile .dropdown-menu ul li
+{
+  border-top: 1px solid #999;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.my-profile .dropdown-menu ul li:hover p
+{
+  color: gold;
+  transition: .3s;
+}
+
+.my-profile .dropdown-menu ul li img
+{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 50px;
+  transition: .3s;
+  opacity: .3;
+}
+
+.my-profile .dropdown-menu ul li:hover img
+{
+  opacity: 1;
+}
+
+.dropdown-menu.inactive
+{
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: .3s;
+  visibility: hidden;
+}
+
+.dropdown-menu.active
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition: .5s;
+  /* display: block; */
+  visibility: visible;
+}

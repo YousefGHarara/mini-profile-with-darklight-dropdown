@@ -1,0 +1,13 @@
+.my-content
+{
+  /* background-color: gold; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+}
+
+.my-content h1
+{
+  font-size: 4em;
+}
